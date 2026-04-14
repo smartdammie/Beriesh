@@ -382,5 +382,9 @@ footer p {
   .features-img {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .call-to{
+    flex-direction: column;
+  }
 }
 
