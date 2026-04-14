@@ -373,3 +373,14 @@ footer p {
     min-width: 600px;
   }
 }
+
+@media (max-width: 1024px) {
+  .featured-sec {
+    flex-direction: column;
+  }
+
+  .features-img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
