@@ -123,6 +123,8 @@ button {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .hero input {
@@ -131,6 +133,8 @@ button {
   max-width: 400px;
   border: none;
   border-radius: 20px;
+  flex: 1;
+  min-width: 0;
 }
 
 .hero button {
@@ -138,6 +142,7 @@ button {
   border: none;
   outline: none;
   border-radius: 20px;
+  white-space: nowrap;
 }
 
 .featured-sec {
@@ -379,12 +384,11 @@ footer p {
     flex-direction: column;
   }
 
-  .features-img {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .call-to{
+  .call-to {
+    display: flex;
     flex-direction: column;
   }
+  .features-img {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
-
